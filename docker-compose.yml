@@ -1,0 +1,7 @@
+services:
+ redis:
+  image: redis:7-alpine
+ worker:
+  build: .
+  environment: {REDIS_ADDR: redis:6379}
+  depends_on: [redis]
