@@ -3,4 +3,3 @@ Go microservice using Redis BRPOP queues, goroutines, channels, a bounded worker
 
 Run: `go test -race ./...` and `docker compose up --build`.
 
-Synthetic concurrency tests are included; no specific production throughput is claimed.
